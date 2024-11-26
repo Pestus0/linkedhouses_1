@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Publicación</title>
+    <link rel="stylesheet" href="../Estilos/styles.css">
+</head>
+<body>  
+    <div class="contenedor">
+    <div class="fondo">
+    <h1 class="titform">Agregue Receta</h1>
+    <form action="agregar.php" method="POST" enctype="multipart/form-data">
+        <div class="mb-3">
+        <label for="img">Imagen:</label>
+        <input type="file" id="img" name="img" required>
+        </div>
+        <div class="mb-3">
+        <label for="nombre">Precio:</label>
+        <input type="number" id="precio" name="precio" required>
+        </div>
+        <div class="mb-3">
+        <label for="nombre">Dirección</label>
+        <input type="text" id="direccion" name="direccion" required>
+        </div>
+        <div class="mb-3">
+        <label for="categorias">Tipo de hogar:</label>
+        <select name="tipo_hogar" id="tipo_hogar" required>
+            <option value="venta">Hogar</option>
+            <option value="Alquilar">Alquiler</option>
+        </select>
+        </div>
+        <div class="mb-3">
+        <label for="categorias">Tipo:</label>
+        <select name="tipo" id="tipo" required>
+            <option value="venta">Venta</option>
+            <option value="Alquilar">Alquilar</option>
+        </select>
+        </div>
+        <div class="mb-3">
+        <label for="">Localidad:</label>
+        <select name="localidad" id="localidad" required>
+            <option value="monte-grande">Monte Grande</option>
+            <option value="ezeiza">Ezeiza</option>
+            <option value="canning">Canning</option>
+            <option value="luis guillon">Luis Guillon</option>
+            <option value="spegazzini">Spegazzini</option>
+            <option value="banfield">Banfield</option>
+            <option value="lomas de zamora">Lomas de Zamora</option>
+            <option value="lanus">Lanus</option>
+          </select>
+        </div>
+        <input type="submit" value="Agregar Publicación" class="btn">
+    </form>
+    </div>
+    </div>
+</body>
+</html>
